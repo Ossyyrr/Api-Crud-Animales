@@ -1,0 +1,23 @@
+form{
+  margin-top:20px;
+  display: flex;
+  justify-content: center;
+}
+fieldset{
+  background-color: rgba(255, 255, 255, 0.671);
+  min-width: 225px;
+  padding: 0 0 50px 60px;
+  display: flex;
+
+}
+
+button{
+  margin-top: 30px;
+  background-color: rgb(240, 222, 120);
+  border:none;
+  padding: 10px 64px;
+  &:hover{
+    filter: brightness(120%);
+  }
+}
+

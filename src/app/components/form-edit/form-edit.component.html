@@ -1,0 +1,24 @@
+
+<form [formGroup]="myFormEdit" (ngSubmit)="onFormSubmitEdit(myFormEdit.value)"><fieldset>
+  <legend>Editar Animal</legend>
+
+  <label for="name">
+      <h4> Nombre </h4>
+      <input id="name" type="text" formControlName="name"   [(ngModel)]="name" >
+  </label>
+  <label for="image">
+      <h4> Imagen </h4>
+      <input type="text" formControlName="image" id="image"  [(ngModel)]="image">
+  </label>
+  <label for="habitat">
+      <h4> Hábitat </h4>
+      <input type="text" formControlName="habitat" id="habitat"  [(ngModel)]="habitat">
+  </label>
+  <label for="species">
+      <h4> Especie </h4>
+      <input type="text" formControlName="species" id="species"  [(ngModel)]="species">
+  </label>
+
+  <button type="submit"> Editar </button>
+</fieldset>
+</form>

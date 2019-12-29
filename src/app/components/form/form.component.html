@@ -1,0 +1,25 @@
+
+<form [formGroup]="myForm" (ngSubmit)="onFormSubmit(myForm.value)"><fieldset>
+    <legend>Añadir Animal</legend>
+
+    <label for="name">
+        <h4> Nombre </h4>
+        <input id="name" type="text" formControlName="name">
+    </label>
+    <label for="image">
+        <h4> Imagen </h4>
+        <input type="text" formControlName="image" id="image">
+    </label>
+    <label for="habitat">
+        <h4> Hábitat </h4>
+        <input type="text" formControlName="habitat" id="habitat">
+    </label>
+    <label for="species">
+        <h4> Especie </h4>
+        <input type="text" formControlName="species" id="species">
+    </label>
+
+    <button type="submit"> Añadir </button>
+  </fieldset>
+</form>
+

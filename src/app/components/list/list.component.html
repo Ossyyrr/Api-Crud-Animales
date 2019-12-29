@@ -1,0 +1,20 @@
+
+<section *ngIf="animals.length">
+<div class="container" *ngFor="let animal of animals" >
+  <div>
+    <img [src]="animal.image" alt="">
+  </div>
+  <div class="mascara">
+    <h3>{{animal.name}}</h3>
+    <h5>Características:</h5>
+    <p>Hábitat: {{animal.characteristics.habitat | titlecase}}
+    <br> Especie: {{animal.characteristics.species| titlecase}}</p>
+    <div class="botones">
+      <button type="button" (click)="deleteButton(animal.id)">Borrar</button>
+      <button type="button" (click)="editButton(animal)">EDIT</button>
+    </div>
+  </div>
+  </div>
+</section>
+
+

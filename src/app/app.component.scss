@@ -1,0 +1,39 @@
+h2{
+  padding: 10px;
+  border-radius: 5px;
+}
+nav{
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.navbar{
+  min-height: 50px;
+  width: 80vw;
+  display: flex;
+  flex-flow: wrap;
+  align-items: center;
+  justify-content: center;
+
+
+}
+a{
+  min-width: 140px;
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+  background-color: rgb(226, 255, 255);
+  margin:10px 15px;
+  box-shadow: 3px 3px 5px gray;
+  border: rgb(219, 219, 219) 1px solid;
+  &:hover{
+    filter: brightness(120%);
+    transition: .5s;
+  }
+}
+
+
+
